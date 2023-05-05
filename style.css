@@ -1,45 +1,58 @@
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  #button {
+*{
+    text-align: center;
+}
+
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background: #000000;
+}
+
+.container{
+padding: 20px;
+width: 400px;
+height: 600px;
+margin: 0 auto;
+margin-top: 40px;
+background: rgb(243, 243, 243);
+border-radius: 10px;}
+
+form {
     display: inline-block;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #list {
-    margin-top: 20px;
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  li {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-  }
-  
-  .strike {
-    text-decoration: line-through;
-    color: #ccc;
-  }
-  
-  .delete {
-    display: none;
-  }
+}
+
+input{
+padding: 10px 20px 10px 10px;
+}
+
+#button{
+display: inline-block;
+background-color:#29e846;
+color:#ffffff;
+border-radius: 5px;
+margin-top:5px;
+padding: 5px 15px;
+}
+
+#button:hover{
+cursor: pointer;
+opacity: .7;}
+
+li:hover{
+  cursor: grab;
+ }
+
+.delete {
+	display: none;
+}
+
+li > crossOutButton {
+    color: red;
+    float: right;
+	font-weight: 800;
+    border-color: #000;
+}
+
+ol li {
+    padding: 5px
+}
   
