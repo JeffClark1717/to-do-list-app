@@ -27,7 +27,10 @@ function newItem() {
 }
 
 $(document).ready(function() {
-  $('#button').on('click', newItem);
+  $('#button').on('click', function() {
+    newItem();
+  });
+  
   $('#input').on('keypress', function(event) {
     if (event.which === 13) {
       event.preventDefault();
